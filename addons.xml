@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons><addon id="plugin.program.libretto.setup" name="Libretto Setup" version="1.0.0" provider-name="Hanzman">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+
+  
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Wizard to write advancedsettings.xml for MariaDB</summary>
+    <summary lang="cs_cz">Průvodce pro zápis advancedsettings.xml pro MariaDB</summary>
+    <description lang="en_gb">Prompts for DB host/user and exports advancedsettings.xml</description>
+    <description lang="cs_cz">Zeptá se na DB host/uživatele a vyexportuje advancedsettings.xml</description>
+    <platform>all</platform>
+  </extension>
+</addon><addon id="plugin.video.nextsmartlists" name="NextSmart Lists" version="1.5.5" provider-name="Thoriet">
+
+
+    
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Dynamic 'Next Up' + In-Progress episodes per show (Kodi 20+)</summary>
+        <summary lang="cs_CZ">Dynamické seznamy „Další na řadě“ + rozkoukané epizody pro každý seriál (Kodi 20+)</summary>
+        <description lang="en_GB">Creates dynamic lists (by profile) that show either the in-progress episode or the next unplayed episode per started TV show. Add any profile path as a widget (plugin://plugin.video.nextsmartlists/?action=browse&amp;profile=&lt;key&gt;). Supports skipping specials and multiple lists.</description>
+        <description lang="cs_CZ">Vytváří dynamické seznamy (podle profilu), které zobrazují buď rozkoukanou epizodu, nebo další nepřehranou epizodu každého seriálu, který jste již začali sledovat. Každý profil lze přidat jako widget (plugin://plugin.video.nextsmartlists/?action=browse&amp;profile=&lt;key&gt;). Podporuje přeskočení speciálů a více seznamů.</description>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://example.invalid/nextsmart</source>
+    </extension>
+</addon><addon id="repository.libretto" name="Libretto Repository" version="1.0.0" provider-name="Thoriet">
+  <requires>
+    <import addon="xbmc.addon" version="20.0.0" />
+  </requires>
+  <extension point="xbmc.addon.repository" name="Libretto Repository">
+    <info compressed="false">https://thoriet-net.github.io/libretto-repo/addons.xml</info>
+    <checksum>https://thoriet-net.github.io/libretto-repo/addons.xml.md5</checksum>
+    <datadir zip="true">https://thoriet-net.github.io/libretto-repo/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Official Libretto repository</summary>
+    <description lang="en_GB">Installs and updates Libretto add-ons.</description>
+    <platform>all</platform>
+  </extension>
+</addon><addon id="skin.libretto" name="Libretto" version="0.0.1" provider-name="Thoriet">
+  <requires>
+    
+    <import addon="xbmc.gui" version="5.17.0" />
+  </requires>
+
+  <extension point="xbmc.gui.skin" defaultresolution="1080i" defaultthemename="Textures.xbt" debug="false" />
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_gb">Libretto skin (early scaffold)</summary>
+    <summary lang="cs_cz">Libretto skin (základní kostra)</summary>
+    <description lang="en_gb">A minimal skin scaffold to start building Libretto.</description>
+    <description lang="cs_cz">Minimální kostra skinu pro začátek vývoje Libretto.</description>
+    <license>MIT</license>
+    <source>https://github.com/Thoriet-net/libretto-kodi</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon></addons>
